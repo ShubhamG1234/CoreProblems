@@ -1,26 +1,12 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("LeapYear");
+Console.WriteLine("Harmonic Number");
 
-int i;
-Console.WriteLine("Enter a year:");
-i = Convert.ToInt32(Console.ReadLine());
-if ((i % 400) == 0)
+Console.WriteLine("Enter the Harmonic you want to find\n");
+int number = Convert.ToInt32(Console.ReadLine());
+double result = 0;
+for (double i = 1; i <= number; i++)
 {
-    Console.WriteLine("Enter year is a Leap yaer:");
-
+    result += 1 / i;
 }
-else if ((i % 100) == 0)
-{
-    Console.WriteLine("Enter year is a Leap yaer:");
 
-}
-else if ((i % 4) == 0)
-
-{
-    Console.WriteLine("Enter year is a Leap yaer:");
-
-}
-else
-{
-    Console.WriteLine("Enter year is a Not Leap year:");
-}
+Console.WriteLine("The Value of Harmonic " + number + " :" + result + "\n");
